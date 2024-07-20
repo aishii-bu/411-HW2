@@ -1,1 +1,5 @@
+{
+"ip": <the floating ip of your vm>,
+"port": <the port you are using>
+}
 
