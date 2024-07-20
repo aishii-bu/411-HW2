@@ -1,4 +1,4 @@
-from flask import Flask, make_response
+from flask import Flask, make_response, request
 
 app = Flask(__name__)
 
@@ -16,4 +16,4 @@ if __name__ == '__main__':
     # By default flask is only accessible from localhost.
     # Set this to '0.0.0.0' to make it accessible from any IP address
     # on your network (not recommended for production use)
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', port=5020, debug=True)
