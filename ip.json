@@ -1,5 +1,5 @@
 {
-"ip": <the floating ip of your vm>,
-"port": <the port you are using>
+"ip": 192.168.0.187 ,
+"port": 5020
 }
 
