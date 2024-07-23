@@ -16,7 +16,7 @@ COPY . /app
 # RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install flask
 
-ENV PORT = 5004
+ENV PORT=5004
 
 # Port 5000 is the default value for flask apps
 # Make port 5000 available to the world outside this container
