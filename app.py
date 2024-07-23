@@ -4,12 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    response = make_response(
-        {
-            'response': 'Hello, World!',
-            'status': 200
-        }
-    )
+    response = make_response("Hello World", 200)
     return response
 
 if __name__ == '__main__':
@@ -20,20 +15,17 @@ if __name__ == '__main__':
 
 @app.route('/repeat')
 def getParameter(input):
-    val = (
-        {
-            'body':input,
-            'status':200
-        }
-    )
+    val = (input,200)
     return val
 
 @app.route('/health')
 def health():
-    response = make_response(
-        {
-            'body': 'OK',
-            'status': 200
-        }
-    )
+    response = make_response("OK",200)
     return response
+
+@app.route('/hang')
+def hang():
+    # loop 4ever
+    var = False
+    while var == False:{
+    }
