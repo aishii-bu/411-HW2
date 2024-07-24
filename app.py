@@ -14,6 +14,7 @@ def getParameter():
     return val
 
 @app.route('/health')
+@app.route('/healthcheck')
 def health():
     response = make_response("OK",200)
     return response
