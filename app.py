@@ -8,7 +8,8 @@ def hello():
     return response
 
 @app.route('/repeat')
-def getParameter(input):
+def getParameter():
+    input = request.args.get("input", "Missing get parameter")
     val = (input,200)
     return val
 
